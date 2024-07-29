@@ -1,0 +1,72 @@
+.adven{
+    width: 98%;
+    padding: 20px;
+    margin: auto;
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.adven-title{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 36px;
+    color: #333333;
+    line-height: 42px;
+}
+
+.adven-block-top{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.adven-card{
+    width: 330px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+}
+
+.adven-card-img{
+    width: 150px;
+    height: 150px;
+    padding: 20px;
+    background-color: rgba(127, 231, 240, 0.815);
+    border-radius: 50%;
+}
+
+.adven-card-span{
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    font-size: 18px;
+    padding-top: 0;
+    line-height: 23px;
+    color: #494747;
+}
+
+.child{
+    color: #5beae3;
+}
+
+.adven.btn{
+    text-align: center;
+    margin: auto;
+}
+
+.add-btn{
+    width: 300px;
+    padding: 30px 35px;
+    background-color:#418E8B;
+    border: none;
+    text-align: center;
+    border-radius: 50px;
+    color: white;
+    margin-top: 40px;
+    /* margin: auto; */
+}
