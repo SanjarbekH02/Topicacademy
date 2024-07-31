@@ -3,7 +3,10 @@ import Navbar from './Components/Navbar/Navbar';
 import Header from './Components/header/Header';
 import Adven from './Components/Adven/Adven';
 import Swiper from './Components/Swiper/Swiper';
-import Swiper2 from './Components/Swiper2/Swiper2';
+// import Swiper2 from './Components/Slider/Slider';
+import Slider from './Components/Slider/Slider';
+import Grant from './Components/Grant/Grant';
+import Cource from './Components/Course/Course';
 function App() {
   return (
     <div className="App container">
@@ -11,7 +14,9 @@ function App() {
       <Header />
       <Adven />
       <Swiper />
-      <Swiper2 />
+      {/* <Slider /> */}
+      <Grant />
+      <Cource />
     </div>
   );
 }

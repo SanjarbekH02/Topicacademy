@@ -68,5 +68,6 @@
     border-radius: 50px;
     color: white;
     margin-top: 40px;
+    cursor: pointer;
     /* margin: auto; */
 }
