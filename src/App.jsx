@@ -7,6 +7,7 @@ import Swiper from './Components/Swiper/Swiper';
 import Slider from './Components/Slider/Slider';
 import Grant from './Components/Grant/Grant';
 import Cource from './Components/Course/Course';
+import Selection from './Components/Selection/Selection';
 function App() {
   return (
     <div className="App container">
@@ -14,9 +15,9 @@ function App() {
       <Header />
       <Adven />
       <Swiper />
-      {/* <Slider /> */}
       <Grant />
       <Cource />
+      <Selection />
     </div>
   );
 }
