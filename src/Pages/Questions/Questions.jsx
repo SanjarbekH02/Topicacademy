@@ -9,7 +9,8 @@ import Modal from '../Modal/Modal';
     const [inputValue, setInputValue] = useState('')
     const [inputNumber, setInputNumber] = useState('')
 
-    const modalHandler = () => {
+    const modalHandler = (e) => {
+        e.preventDefault()
         setOpen(open => !open)
         setInputValue('')
         setInputNumber('')
