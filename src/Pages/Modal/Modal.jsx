@@ -13,7 +13,7 @@ const Modal = ({isOpen, setIsOpen}) => {
             <div className="modal-content">
                 <img onClick={modalClose} src={Close} alt="" className="close" />
                 <img className='done' src={Done} alt="" />
-                <p className="modal-text">Sizning savolingiz, yozib olindi, tez orada siz bilan mutaxassisimiz aloqaga chiqadi</p>
+                <p className="modal-text">Sizning so'rovingiz yozib olindi, tez orada siz bilan mutaxassisimiz aloqaga chiqadi</p>
             </div>
         </div>
     );

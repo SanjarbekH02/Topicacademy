@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Adven.css'
 import messeg from '../../img/messeg.png'
 import reketa from '../../img/raketa.png'
@@ -6,9 +6,18 @@ import money from '../../img/money.png'
 import diplomat from '../../img/diplomat.png'
 import nishon from '../../img/nishon.png'
 import key from '../../img/key.png'
+import ModalForm from '../ModalForm/ModalForm';
 
 
 const Adven = () => {
+
+    const [modalOpen, setModalOpen] = useState(false)
+
+    const modalOpenHandler = () => {
+        setModalOpen(x => !x)
+
+    }
+
     return (
         <div className='adven'>
             <h5 className="adven-title">TOPIK academy aniq siz uchun agar siz:</h5>
@@ -47,8 +56,11 @@ const Adven = () => {
             </div>
 
             <div className="adven-btn">
-                <button className='add-btn'>HA, BU MEN</button>
+                <button onClick={modalOpenHandler} className='add-btn'>HA, BU MEN</button>
             </div>
+
+            <ModalForm closeModal={setModalOpen} isModalOpen={modalOpen}  />
+
         </div>
     );
 }

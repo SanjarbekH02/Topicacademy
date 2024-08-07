@@ -1,12 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { DefaultPlayer as Video } from 'react-html5video';
 import './Grant.css'
 import logoSchol from '../../img/schol-logo.jpg'
 import introVideo from '../../img/video.mp4';
 import 'react-html5video/dist/styles.css';
 import topic1 from '../../img/topic.png'
+import ModalForm from '../ModalForm/ModalForm';
 
 const Grant = () => {
+
+    const [modalOpen, setModalOpen] = useState(false)
+
+    const modalOpenHandler = () => {
+        setModalOpen(x => !x)
+
+    }
+
     return (
         <div className='grant'>
             <h3 className="grant-title">Koreya Universitetlariga 100% gacha grant yutish imkoniyati</h3>
@@ -46,7 +55,7 @@ const Grant = () => {
                     <div className="bottom-block-left">
                         <h5 className="bottom-left-title"><span className="child">TOPIK academy consulting</span> jamoasi sizga universitet tanlash, visa olish va grant yutishingizda yaqindan ko’maklashadi</h5>
                         <p className="bottom-desc">Ko’proq ma’lumot olish uchun bepul konsultatsiyaga yoziling!</p>
-                        <button className="bottom-btn">ARIZA QOLDIRISH</button>
+                        <button onClick={modalOpenHandler} className="bottom-btn">ARIZA QOLDIRISH</button>
                     </div>
 
                     <div className="slider3">
@@ -85,6 +94,8 @@ const Grant = () => {
                     </div>
                 </div>
             </div>
+
+            <ModalForm closeModal={setModalOpen} isModalOpen={modalOpen} />
         </div>
     );
 }

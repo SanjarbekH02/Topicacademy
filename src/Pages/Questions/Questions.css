@@ -178,6 +178,7 @@
 
 .modal-form-open{
     display: flex;
+    z-index: 999;
 }
 
 .phone-right2 {

@@ -1,9 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Header.css'
 import mam from '../../img/ima.png'
 import head from '../../img/mainimg.jpg'
+import ModalForm from '../ModalForm/ModalForm';
 
 const Header = () => {
+
+    const [modalOpen, setModalOpen] = useState(false)
+
+    const modalOpenHandler = () => {
+        setModalOpen(x => !x)
+
+    }
+
     return (
         <div className='header'>
             <div className="head-left">
@@ -24,10 +33,12 @@ const Header = () => {
                 <img className='right-img' src={head} alt="img" />
             </div>
                 <div className="button-block">
-                    <button className="head-btn">BEPUL DARSGA YOZILISH</button>
+                    <button onClick={modalOpenHandler} className="head-btn">BEPUL DARSGA YOZILISH</button>
                     <p className="btn-desc">Birinchi darsga bepul yoziling!</p>
                 </div>
             </div>
+
+            <ModalForm closeModal={setModalOpen} isModalOpen={modalOpen} />
         </div>
     );
 }
