@@ -1,6 +1,6 @@
 .navbar{
     display: flex;
-    align-items: center;
+    align-items: center!important;
     justify-content: space-between;
     padding: 20px 0;
 }
@@ -44,13 +44,26 @@
     font-size: 20px;
 }
 
+.toggle{
+    width: 40px;
+    height: 40px;
+    /* background-color: red; */
+    padding: 5px;
+}
+
+.toggle-line{
+    width: 40px;
+    height: 5px;
+    background-color: black;
+}
+
 @media only screen and (max-width: 1064px){
     .nav-list{
         display: none!important;
     }
 }
 
-@media only screen and (max-width: 550px){
+@media only screen and (max-width: 750px){
     .logo-desc{
         display: none;
     }
@@ -61,5 +74,27 @@
 
     .logo-block{
         width: fit-content;
+    }
+}
+
+@media only screen and (max-width: 450px){
+    .nav-call{
+        font-size: 12px;
+    }
+
+    .cal-item{
+        font-size: 14px;
+    }
+
+    .logo-block{
+        width: 130px;
+    }
+    .logoLink{
+        width: 100%;
+    
+    }
+
+    .logo-image{
+        width: 100%;
     }
 }

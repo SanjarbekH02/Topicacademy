@@ -1,23 +1,30 @@
 import './App.css';
-import Navbar from './Components/Navbar/Navbar';
-import Header from './Components/header/Header';
-import Adven from './Components/Adven/Adven';
-import Swiper from './Components/Swiper/Swiper';
-// import Swiper2 from './Components/Slider/Slider';
-import Slider from './Components/Slider/Slider';
-import Grant from './Components/Grant/Grant';
-import Cource from './Components/Course/Course';
-import Selection from './Components/Selection/Selection';
+import './bootstrap.css'
+import Navbar from './Pages/Navbar/Navbar';
+import Header from './Pages/header/Header';
+import Adven from './Pages/Adven/Adven';
+import Swiper from './Pages/Swiper/Swiper';
+import Grant from './Pages/Grant/Grant';
+import Cource from './Pages/Course/Course';
+import Selection from './Pages/Selection/Selection';
+import Questions from './Pages/Questions/Questions';
+import Footer from './Pages/Footer/Footer';
+import Modal from './Pages/Modal/Modal';
 function App() {
   return (
-    <div className="App container">
-      <Navbar />
-      <Header />
-      <Adven />
-      <Swiper />
-      <Grant />
-      <Cource />
-      <Selection />
+    <div>
+      <div className="App container">
+        <Navbar />
+        <Header />
+        <Adven />
+        <Swiper />
+        <Grant />
+        <Cource />
+        <Selection />
+        <Questions />
+        <Modal />
+      </div>
+      <Footer />
     </div>
   );
 }

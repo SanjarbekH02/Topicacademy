@@ -6,7 +6,7 @@ import card3 from '../../img/card3.png'
 
 const Cource = () => {
     return (
-        <div className='course'>
+        <div id='course' className='course'>
             <h3 className="grant-title">O’zingizga mos kursga ro’yxatdan o’ting</h3>
             <div className="course-block">
                 <div className="course-card">
@@ -50,7 +50,7 @@ const Cource = () => {
                             <span className="intensive-title">Individual </span>
                             <span className="intensive-month">Davomiyligi: 5 oy</span>
                         </div>
-                        <p className="course-card-desc">O’qituvchidan individual dars olmoqchi bo’lganlar uchun haftada 3 kun 1.5 soatdan darslar. Moslashuvchan grafik va individual yondashuv.</p>
+                        <p className="course-card-desc">O’qituvchidan individual dars olmoqchi bo’lganlar uchun haftada 3 kun 1.5 soatdan darslar.</p>
 
                         <div className="course-card-reg">
                             <button className="course-card-btn">RO'YXATDAN O'TISH</button>

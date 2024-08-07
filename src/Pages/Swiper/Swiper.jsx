@@ -5,7 +5,7 @@ import topic1 from '../../img/topic.png'
 
 const Swiper = () => {
     return (
-        <div className='swiper'>
+        <div id='natijalar' className='swiper'>
             <div className="slider">
                 <div className="slide-truck">
                     <div className="slide">

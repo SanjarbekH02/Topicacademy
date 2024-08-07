@@ -1,0 +1,43 @@
+.modal{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.566);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(5px);
+    display: none;
+}
+
+.modal-open{
+    display: flex;
+}
+
+.modal-content{
+    width: 300px;
+    height: 250px;
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+}
+
+.close{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 5;
+}
+
+.done{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+    /* padding-top: 10px; */
+}

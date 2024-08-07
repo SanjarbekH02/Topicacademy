@@ -6,6 +6,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow: hidden;
 }
 
 .adven-title{
@@ -21,10 +22,13 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+    /* align-items: center; */
+    flex-wrap: wrap;
+    margin: auto;
 }
 
 .adven-card{
-    width: 330px;
+    width: 270px;
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -36,7 +40,7 @@
     width: 150px;
     height: 150px;
     padding: 20px;
-    background-color: rgba(127, 231, 240, 0.815);
+    background-color: #d7f8dbf4;
     border-radius: 50%;
 }
 
@@ -70,4 +74,65 @@
     margin-top: 40px;
     cursor: pointer;
     /* margin: auto; */
+}
+
+@media only screen and (max-width: 1000px){
+
+    .adven{
+        width: 100%;
+    }
+    
+    .adven-card{
+        width: 200px;
+    }
+    
+    .adven-card-img{
+        width: 80px;
+        height: 80px;
+    }
+    
+    .adven-card-span{
+        font-size: 14px;
+        line-height: 18px;
+    }
+    
+}
+
+@media only screen and (max-width: 468px){
+
+    .adven-title{
+        font-size: 20px;
+        color: #333333;
+        line-height: 26px;
+    }
+
+    .adven-block-top{
+        align-items: center;
+        justify-content: center;
+    }
+    .adven-card{
+        width: 300px;
+    }
+
+    .adven-card-img{
+        width: 150px;
+        height: 150px;
+    }
+
+    .adven-card-span{
+        font-size: 16px;
+        line-height: 23px;
+    }
+
+    .adven.btn{
+        text-align: center;
+        margin: auto;
+    }
+    
+    .add-btn {
+        width: 200px;
+        padding: 20px 25px;
+        border-radius: 50px;
+        margin-top: 40px;
+    }
 }

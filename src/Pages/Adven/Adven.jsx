@@ -25,11 +25,11 @@ const Adven = () => {
 
                 <div className="adven-card">
                     <img src={money} alt="" className="adven-card-img" />
-                    <div className="adven-card-span">Topik sertifikatini olib Koreyaning nufuzli universitetlariga <span className="child">GRANT</span> yutmoqchisiz</div>
+                    <div className="adven-card-span">Topik sertifikatini olib universitetlariga <span className="child">GRANT</span> yutmoqchisiz</div>
                 </div>
-            </div>
 
-            <div className="adven-block-top">
+
+
                 <div className="adven-card">
                     <img src={diplomat} alt="" className="adven-card-img" />
                     <div className="adven-card-span">Janubiy Koreya davlatida <span className="child">o’qish</span> va <span className="child">ishlash</span> uchun ketmoqchisiz</div>
@@ -47,7 +47,7 @@ const Adven = () => {
             </div>
 
             <div className="adven-btn">
-            <button className='add-btn'>HA, BU MEN</button>
+                <button className='add-btn'>HA, BU MEN</button>
             </div>
         </div>
     );

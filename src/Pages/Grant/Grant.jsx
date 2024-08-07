@@ -34,7 +34,7 @@ const Grant = () => {
             </div>
 
             <div>
-                <Video className="videos" autoPlay loop>
+                <Video className="videos"  loop>
                     <source src={introVideo} type='video/webm' />
                 </Video>
                 <div className="video-title">GKS granti haqida to’liq siz uchun tayyorlagan video suhbatimizda bilib oling! ...</div>

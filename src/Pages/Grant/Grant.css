@@ -165,3 +165,103 @@
     right: 0;
     transform: rotateZ(180deg);
 }
+
+@media only screen and (max-width: 792px){
+    .grant{
+        width: 100%;
+        margin-top: 60px;
+    }
+    
+    .grant-title{
+        width:100%;
+        font-size: 36px;
+        line-height: 43px;
+    }
+    
+    .grant-block{
+        flex-direction: column;
+    }
+    
+    .grant-left{
+        width: 100%;
+        /* padding-right: 30px; */
+    }
+    
+    .logo-schol{
+        width:100%;
+        margin-bottom: 30px;
+    }
+    
+    .grant-right{
+        width: 100%;
+    }
+    
+    .grant-right-block{
+        margin-bottom: 10px;
+    }
+    
+    .grant-right-title{
+        font-size: 24px;
+        margin-top: 50px;
+    }
+
+    .grant-list{
+        list-style: none;
+    }
+    
+    .grant-desc{
+        font-size: 18px;
+        line-height: 25px;
+        padding: 5px 0;
+    }
+
+    .video-title{
+        font-size: 16px;
+        
+    }
+    
+    .bottom-block{
+        flex-direction: column-reverse;
+    }
+    
+    .bottom-block-left{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .bottom-left-title{
+        font-size: 20px;
+        line-height: 29px;
+        margin-top: 30px;
+    }
+    
+    .bottom-desc{
+        font-size: 18px;
+        line-height: 21px;
+        color: #444444;
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+    
+    .bottom-btn{
+        margin: auto;
+        text-align: center;
+    }
+
+    .slider3{
+        display: none;
+    }
+    
+}
+
+@media only screen and (max-width: 470px){
+    .grant-title{
+        font-size: 20px;
+        color: #333333;
+        line-height: 22px;
+        text-align: center;
+    }
+}
