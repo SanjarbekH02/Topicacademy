@@ -3,7 +3,7 @@ import './Questions.css'
 import Modal from '../Modal/Modal';
 
 
- function Questions() {
+function Questions() {
     const [selected, setSelected] = useState(null)
     const [open, setOpen] = useState(false)
     const [inputValue, setInputValue] = useState('')
@@ -14,10 +14,10 @@ import Modal from '../Modal/Modal';
         setOpen(open => !open)
         setInputValue('')
         setInputNumber('')
-    } 
-    
-    const toggle = (i) =>{
-        if(selected == i) {
+    }
+
+    const toggle = (i) => {
+        if (selected == i) {
             return setSelected(null)
         }
 
@@ -29,8 +29,8 @@ import Modal from '../Modal/Modal';
             <div className="accordion-block">
 
                 {
-                    data.map((item, i) => 
-                        <div className={`accordion ${selected == i ? 'accordion-active' : '' }`}>
+                    data.map((item, i) =>
+                        <div className={`accordion ${selected == i ? 'accordion-active' : ''}`}>
                             <div onClick={() => toggle(i)} className={`accordion-title ${selected == i ? 'accordion-title-active' : ''}`}>
                                 <h3 className='accord-title'>{item.title}</h3>
                                 <span></span>
@@ -40,7 +40,7 @@ import Modal from '../Modal/Modal';
                             </div>
                         </div>
 
-                        
+
                     )
                 }
             </div>
