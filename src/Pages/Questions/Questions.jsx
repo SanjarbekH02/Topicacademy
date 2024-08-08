@@ -36,7 +36,7 @@ function Questions() {
                                 <span></span>
                             </div>
                             <div id='tab-1' className={`accordion-content ${selected == i ? 'accordion-content-active' : ''}`} >
-
+                                O'quv materiallari bilan albatta ta'minlaymiz
                             </div>
                         </div>
 
